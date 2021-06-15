@@ -1,0 +1,102 @@
+// HERO
+.main-order-section__title {
+  margin-top: 0;
+  margin-bottom: $the-most-often-px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 696px;
+  /*white-space: pre-line;*/
+  color: $title-text-color-secondary;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+// EXP
+.section--experience__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+// FEATURES
+.feature-list__title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+// TEAM
+.section--team__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
+// MEMBER
+.team-member__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+}
+// FOOTER
+.join-content__title {
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-text-color-secondary;
+}
+.subscription--title {
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $title-text-color-secondary;
+}
+// MODAL
+.order-form__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+
+  color: $title-text-color;
+}
+// PORTFOLIO TITLE
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.card__title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}

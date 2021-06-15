@@ -1,0 +1,13 @@
+.header-main {
+  @extend %centeredFlex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid #ececec;
+}
+.header-main__container {
+  @extend %centeredFlex;
+}
+.header-main__nav {
+  @extend %centeredFlex;
+}

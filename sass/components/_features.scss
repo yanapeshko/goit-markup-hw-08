@@ -1,0 +1,36 @@
+.feature-list {
+  display: flex;
+  @extend %list;
+}
+.feature-list__item {
+  margin-right: $the-most-often-px;
+  width: 270px;
+  &::before {
+    display: block;
+    content: '';
+    height: 120px;
+    margin-bottom: $the-most-often-px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+
+    background-color: #f5f4fa;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.feature-list__item--icon-antenna::before {
+  background-image: url(../images/group.svg);
+}
+.feature-list__item--icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+.feature-list__item--icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.feature-list__item--icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}

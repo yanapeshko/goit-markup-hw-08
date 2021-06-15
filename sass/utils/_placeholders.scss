@@ -1,0 +1,16 @@
+// @extend %link;
+%link {
+  text-decoration: none;
+}
+// @extend %list;
+%list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+// @extend %img;
+%img {
+  display: block;
+  max-width: 100%;
+}

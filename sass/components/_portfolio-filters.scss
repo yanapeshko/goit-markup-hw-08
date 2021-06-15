@@ -1,0 +1,16 @@
+.section__filters {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 50px;
+  list-style: none;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: $title-text-color;
+}
+.section__item {
+  margin-right: 8px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
