@@ -27,3 +27,12 @@
     color: $accent-text-color;
   }
 }
+.contacts-nav .contacts-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+  transition: fill $transition-duration $timing-duration;
+  &:hover,
+  &:focus {
+    fill: $accent-text-color;
+  }
+}

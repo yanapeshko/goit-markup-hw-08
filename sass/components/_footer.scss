@@ -11,6 +11,9 @@
 .footer-page__address {
   font-style: normal;
 }
+.footer-page__logo {
+  color: $title-text-color-secondary;
+}
 .footer-page__details {
   display: block;
   margin-top: 20px;
@@ -49,7 +52,23 @@
     margin-right: 0;
   }
 }
+.join-content__icon {
+  display: block;
+  padding: 12px 12px;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
 
+  fill: $title-text-color-secondary;
+  background: rgba(255, 255, 255, 0.1);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: background-color $timing-duration $transition-duration;
+  &:hover,
+  &:focus {
+    background: $icon-accent-color;
+  }
+}
 .subscription {
   margin-left: 93px;
 }
@@ -74,6 +93,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
+
 .subscription__icon {
   position: absolute;
   top: 13px;

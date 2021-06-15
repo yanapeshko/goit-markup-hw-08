@@ -1,7 +1,5 @@
 .site-nav {
   display: flex;
-}
-.header-main__site-nav {
   @extend %list;
   margin-left: 92px;
 }

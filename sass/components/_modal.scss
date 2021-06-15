@@ -43,10 +43,43 @@
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration $timing-duration;
 }
+.modal__btn {
+  position: absolute;
+  display: inline-flex;
+  top: 8px;
+  right: 8px;
+
+  min-width: 30px;
+  min-height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  align-items: center;
+
+  z-index: 100;
+  background: $title-text-color-secondary;
+}
+.modal__icon-close {
+  fill: $title-text-color;
+
+  transition: fill $transition-duration $timing-duration;
+  &:hover {
+    fill: $accent-text-color;
+  }
+}
 .order-form__field {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+.order-form__icon {
+  position: absolute;
+  bottom: 22px;
+  left: 11px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  transition: fill $timing-duration $transition-duration;
 }
 .order-form__input {
   width: 100%;
@@ -59,7 +92,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border $timing-duration $transition-duration;
-  &:focus ~ .form-icon {
+  &:focus ~ .order-form__icon {
     fill: $accent-text-color;
   }
   &:focus {
@@ -119,6 +152,13 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
+.order-form__icon--checkbox {
+  /* display: inline-block; */
+  /* margin-right: 7px; */
+  cursor: pointer;
+  transition: fill $timing-duration $transition-duration,
+    background-color $timing-duration $transition-duration;
+}
 .order-form__field--checkbox {
   position: absolute;
   width: 1px;
@@ -133,10 +173,10 @@
   -moz-appearance: none;
   appearance: none;
 position: absolute; */
-  &:focus + .form-icon--checkbox {
+  &:focus + .order-form__icon--checkbox {
     background-image: url('../images/vector-agreement.svg');
   }
-  &:checked + .form-icon--checkbox {
+  &:checked + .order-form__icon--checkbox {
     fill: $accent-text-color;
     background-color: $accent-text-color;
     background-image: url('../images/icon-check-1.svg');
