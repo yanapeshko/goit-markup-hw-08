@@ -1,10 +1,16 @@
+// .feature-list {
+//   display: flex;
+
+// }
 .feature-list {
-  display: flex;
   @extend %list;
 }
 .feature-list__item {
-  margin-right: $the-most-often-px;
-  width: 270px;
+  align-items: center;
+  // width: 450px;
+
+  // margin-right: $the-most-often-px;
+
   &::before {
     display: block;
     content: '';
@@ -16,9 +22,9 @@
     border-radius: 4px;
 
     background-color: #f5f4fa;
-    &:last-child {
-      margin-right: 0;
-    }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
   }
 }
 
