@@ -4,13 +4,34 @@
 // }
 .feature-list {
   @extend %list;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin: -15px;
+  }
 }
 .feature-list__item {
   align-items: center;
+  @media screen and(min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
+  }
+  &:not(:last-child) {
+    @media screen and(max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
   // width: 450px;
-
   // margin-right: $the-most-often-px;
-
   &::before {
     display: block;
     content: '';
@@ -39,4 +60,7 @@
 }
 .feature-list__item--icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
+}
+.feature-list__text {
+  margin: 0;
 }
