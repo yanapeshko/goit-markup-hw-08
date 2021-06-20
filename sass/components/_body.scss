@@ -7,3 +7,6 @@ body {
   line-height: 1.7;
   /* padding-top: 80px;*/
 }
+body.modal-open {
+  overflow: hidden;
+}

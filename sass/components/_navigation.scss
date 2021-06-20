@@ -1,43 +1,65 @@
 .site-nav {
-  display: flex;
   @extend %list;
-  margin-left: 92px;
-}
-.site-nav__item {
-  margin-right: 50px;
-  &:last-child {
-    margin-right: 0;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    margin-left: 88px;
+
+    @media screen and(min-width: 1200px) {
+      margin-left: 92px;
+    }
   }
 }
+.site-nav__item:not(:last-child) {
+  @media screen and(max-width: 767px) {
+    margin-bottom: 32px;
+  }
+  @media screen and(min-width: 768px) {
+    margin-right: 50px;
+  }
+}
+
 .site-nav__link {
+  @extend %link;
+
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+
   color: $title-text-color;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
+
   letter-spacing: 0.02em;
   transition: color $transition-duration $timing-duration;
-  @extend %link;
+
   &:hover,
   &:focus {
     color: $accent-text-color;
   }
+  @media screen and(min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
-.site-nav__link--current {
-  position: relative;
-  color: $accent-text-color;
-  &::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
 
-    background-color: $accent-text-color;
+.site-nav__link--current {
+  color: $accent-text-color;
+  @media screen and(min-width: 768px) {
+    position: relative;
+    color: $accent-text-color;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+
+      background-color: $accent-text-color;
+    }
   }
 }

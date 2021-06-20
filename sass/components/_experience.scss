@@ -1,4 +1,9 @@
 .section--experience {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.section--experience {
   padding-top: 0;
 }
 .section--experience__list {

@@ -1,15 +1,8 @@
-// HEADER ICONS
-.nav-icon {
-  fill: currentColor;
-  transition: fill $transition-duration $timing-duration;
-  &:hover,
-  &:focus {
-    fill: $accent-text-color;
-  }
-}
-.contacts-nav__nav-icon {
-  margin-right: 10px;
-}
+// fill doesn't work HEADER ICONS
+// .icon-cross {
+//   display: none;
+// }
+
 // TEAM ICONS
 .social-icon {
   display: block;
@@ -46,15 +39,7 @@
     background: $icon-accent-color;
   }
 }
-// MODAL
-.modal-icon-close {
-  fill: $title-text-color;
 
-  transition: fill $transition-duration $timing-duration;
-  &:hover {
-    fill: $accent-text-color;
-  }
-}
 .form-icon {
   display: inline-block;
   width: 18px;

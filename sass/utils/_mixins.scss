@@ -3,3 +3,10 @@
   display: flex;
   align-items: center;
 }
+// @include font(12px, 600, 16px);
+@mixin font($fs, $fw, $lh, $ls) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: decimal-round($lh / $fs, 2);
+  letter-spacing: $ls;
+}
