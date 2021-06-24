@@ -4,14 +4,21 @@
   margin-bottom: $the-most-often-px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  width: 360px;
   /*white-space: pre-line;*/
   color: $title-text-color-secondary;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  @media screen and(min-width: 768px) {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.4;
+  }
 }
 // EXP
 .section--experience__title {
@@ -27,6 +34,7 @@
 .feature-list__title {
   margin-top: 0;
   margin-bottom: 10px;
+
   color: $title-text-color;
   font-weight: 700;
   font-size: 14px;
@@ -39,9 +47,12 @@
   margin-bottom: 50px;
   color: $title-text-color;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.2;
   text-align: center;
+  @media screen and(min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 // MEMBER
 .team-member__title {
@@ -52,6 +63,23 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
+}
+// CLIENTS
+.section-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  text-align: center;
+
+  @media screen and(min-width: 768px) {
+    font-size: 36px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 // FOOTER
 .join-content__title {

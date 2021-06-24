@@ -1,16 +1,38 @@
 .section__filters {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   list-style: none;
-  justify-content: center;
-  margin-bottom: 50px;
+  // DESKSTOP margin-top: 0;
+  // margin-bottom: 50px;
+  // list-style: none;
+  // justify-content: center;
   color: $title-text-color;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .section__item {
-  margin-right: 8px;
-  &:last-child {
-    margin-right: 0;
+  @media screen and(min-width: 480px ) {
+    &:nth-last-child(n + 3) {
+      margin-bottom: 15px;
+    }
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+    @media screen and(min-width: 768px) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
   }
 }

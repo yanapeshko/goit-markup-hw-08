@@ -4,9 +4,26 @@
 
   background: #2f303a;
 }
-.footer-page__container {
-  display: flex;
-  align-items: baseline;
+@media screen and(max-width: 767px) {
+  .footer-page__container {
+    text-align: center;
+  }
+}
+.footer-page__content {
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    text-align: start;
+  }
+}
+.footer-page__mobile-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
+  }
 }
 .footer-page__address {
   font-style: normal;
@@ -26,22 +43,39 @@
   display: block;
   @extend %link;
   margin-bottom: 0;
-  margin-top: 9px;
+  margin-top: 8px;
   color: rgba(255, 255, 255, 0.6);
   transition: color $transition-duration $timing-duration;
   &:focus,
   &:hover {
     color: $accent-text-color;
   }
+  @media screen and(min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 .join-content {
-  margin-left: 70px;
+  @media screen and(max-width: 767px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
+//  DESKSTOP .join-content {
+//   margin-left: 70px;
+// }
 .join-content__list {
   display: flex;
   margin-top: 20px;
+  margin-bottom: 0;
   padding: 0;
   list-style: none;
+
+  @media screen and(max-width: 767px) {
+    justify-content: center;
+  }
 }
 .join-content__item {
   margin-right: 10px;
@@ -66,18 +100,37 @@
     background: $icon-accent-color;
   }
 }
+
+// DESKSTOP .subscription {
+//   margin-left: 93px;
+// }
 .subscription {
-  margin-left: 93px;
+  @media screen and(max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 450px;
+    text-align: center;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .subscription__form-field {
   position: relative;
-  display: flex;
-  width: 570px;
+  // display: flex;
+  // width: 570px;
   margin-top: 20px;
+
+  @media screen and(min-width: 1200px) {
+    display: flex;
+    width: 570px;
+  }
 }
 .subscription__form-input {
   width: 100%;
+  height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   cursor: pointer;
   font: inherit;
 
@@ -88,6 +141,12 @@
   border-radius: 4px;
   &::placeholder {
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and(min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 

@@ -28,7 +28,7 @@
   display: inline-flex;
   align-items: center;
   width: 200px;
-  margin-left: 12px;
+  height: 100%;
   padding: 10px 62px 10px 29px;
   font-weight: 700;
   font-size: 16px;
@@ -41,6 +41,9 @@
   background-color: $accent-text-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  @media screen and(min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 // PORTFOLIO FILTERS
 .section__button {
