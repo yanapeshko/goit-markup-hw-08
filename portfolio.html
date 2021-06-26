@@ -99,14 +99,14 @@
           </button>
           <ul class="mobile-menu__nav">
             <li class="mobile-menu__item">
-              <a
-                href="./index.html"
-                class="mobile-menu__link mobile-menu__link--current"
-                >Студия</a
-              >
+              <a href="./index.html" class="mobile-menu__link">Студия</a>
             </li>
             <li class="mobile-menu__item">
-              <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="mobile-menu__link mobile-menu__link--current"
+                >Портфолио</a
+              >
             </li>
             <li class="mobile-menu__item">
               <a href="" class="mobile-menu__link">Контакты</a>
@@ -190,11 +190,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio1.jpg"
-                    alt="Визитки сотрудников"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img1-480-1x.jpg 1x,
+                        ./img/img1-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img1-768-1x.jpg 1x,
+                        ./img/img1-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img1-1200-1x.jpg 1x,
+                        ./img/img1-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Визитки сотрудников"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -213,11 +236,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio2.jpg"
-                    alt="Постер баскетбольной игры"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img2-480-1x.jpg 1x,
+                        ./img/img2-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img2-768-1x.jpg 1x,
+                        ./img/img2-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img2-1200-1x.jpg 1x,
+                        ./img/img2-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Постер баскетбольной игры"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -238,11 +284,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio3.jpg"
-                    alt="Главная страница приложения ресторана морепродуктов"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img3-480-1x.jpg 1x,
+                        ./img/img3-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img3-768-1x.jpg 1x,
+                        ./img/img3-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img3-1200-1x.jpg 1x,
+                        ./img/img3-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Главная страница приложения ресторана морепродуктов"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -263,11 +332,30 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link">
                 <div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio4.jpg"
-                    alt="Наушники"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img4-480-1x.jpg 1x,
+                        ./img/img4-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img4-768-1x.jpg 1x,
+                        ./img/img4-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img4-1200-1x.jpg 1x,
+                        ./img/img4-1200-2x.jpg 2x
+                      "
+                    />
+                    <img class="product__image" src="#" alt="Наушники" />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -288,11 +376,30 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link"
                 ><div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio5.jpg"
-                    alt="Две коробочки"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img5-480-1x.jpg 1x,
+                        ./img/img5-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img5-768-1x.jpg 1x,
+                        ./img/img5-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img5-1200-1x.jpg 1x,
+                        ./img/img5-1200-2x.jpg 2x
+                      "
+                    />
+                    <img class="product__image" src="#" alt="Две коробочки" />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -313,11 +420,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link"
                 ><div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio6.jpg"
-                    alt="Монитор компьютера"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img6-480-1x.jpg 1x,
+                        ./img/img6-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img6-768-1x.jpg 1x,
+                        ./img/img6-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img6-1200-1x.jpg 1x,
+                        ./img/img6-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Монитор компьютера"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -338,11 +468,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link"
                 ><div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio7.jpg"
-                    alt="Развёрнутый журнал"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img7-480-1x.jpg 1x,
+                        ./img/img7-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img7-768-1x.jpg 1x,
+                        ./img/img7-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img7-1200-1x.jpg 1x,
+                        ./img/img7-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Развёрнутый журнал"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -363,11 +516,30 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link"
                 ><div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio8.jpg"
-                    alt="Этикетка"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img8-480-1x.jpg 1x,
+                        ./img/img8-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img8-768-1x.jpg 1x,
+                        ./img/img8-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img8-1200-1x.jpg 1x,
+                        ./img/img8-1200-2x.jpg 2x
+                      "
+                    />
+                    <img class="product__image" src="#" alt="Этикетка" />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -386,11 +558,34 @@
             <li class="portfolio__item">
               <a href="" class="portfolio__link"
                 ><div class="product">
-                  <img
-                    class="product__image"
-                    src="./images/portfolio9.jpg"
-                    alt="Человек набирающий текст на ноутбуке"
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                        ./img/img9-480-1x.jpg 1x,
+                        ./img/img9-480-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/img9-768-1x.jpg 1x,
+                        ./img/img9-768-2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./img/img9-1200-1x.jpg 1x,
+                        ./img/img9-1200-2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="product__image"
+                      src="#"
+                      alt="Человек набирающий текст на ноутбуке"
+                    />
+                  </picture>
                   <div class="product-overlay">
                     <p class="product-overlay__info">
                       Технокряк это современная площадка распространения
@@ -414,75 +609,79 @@
     <!--подвал-->
     <footer class="footer-page">
       <div class="container footer-page__container">
-        <address class="footer-page__address">
-          <a href="" class="logo"
-            >Web<span class="logo footer-page__logo">Studio</span></a
-          >
-          <a href="" class="footer-page__details"
-            >г. Киев, пр-т Леси Украинки, 26</a
-          >
-          <a href="mailto:info@example.com" class="footer-page__link"
-            >info@example.com</a
-          >
-          <a href="tel:+380991111111" class="footer-page__link"
-            >+38 099 111 11 11</a
-          >
-        </address>
+        <div class="footer-page__content">
+          <div class="footer-page__mobile-tablet">
+            <address class="footer-page__address">
+              <a href="" class="logo"
+                >Web<span class="logo footer-page__logo">Studio</span></a
+              >
+              <a href="" class="footer-page__details"
+                >г. Киев, пр-т Леси Украинки, 26</a
+              >
+              <a href="mailto:info@example.com" class="footer-page__link"
+                >info@example.com</a
+              >
+              <a href="tel:+380991111111" class="footer-page__link"
+                >+38 099 111 11 11</a
+              >
+            </address>
 
-        <div class="join-content">
-          <b class="join-content__title">присоединяйтесь</b>
-          <ul class="join-content__list">
-            <li class="join-content__item">
-              <a href="" class="join-content__icon"
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-content__item">
-              <a href="" class="join-content__icon"
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-content__item">
-              <a href="" class="join-content__icon"
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="join-content__item">
-              <a href="" class="join-content__icon"
-                ><svg width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <form class="form js-speaker-form">
-          <div class="subscription">
-            <b class="subscription--title">Подпишитесь на рассылку</b>
-            <div class="subscription__form-field">
-              <label for="e-mail"></label>
-              <input
-                type="tel"
-                class="subscription__form-input"
-                name="e-mail"
-                id="e-mail"
-                placeholder="E-mail"
-              />
-              <button class="subscription__btn" type="submit">
-                Подписаться
-                <svg class="subscription__icon" width="24" height="24">
-                  <use href="./images/icon.svg#icon-icon-send-3"></use>
-                </svg>
-              </button>
+            <div class="join-content">
+              <b class="join-content__title">присоединяйтесь</b>
+              <ul class="join-content__list">
+                <li class="join-content__item">
+                  <a href="" class="join-content__icon"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-content__item">
+                  <a href="" class="join-content__icon"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-content__item">
+                  <a href="" class="join-content__icon"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="join-content__item">
+                  <a href="" class="join-content__icon"
+                    ><svg width="20" height="20">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-        </form>
+          <form class="form js-speaker-form">
+            <div class="subscription">
+              <b class="subscription--title">Подпишитесь на рассылку</b>
+              <div class="subscription__form-field">
+                <label for="e-mail"></label>
+                <input
+                  type="tel"
+                  class="subscription__form-input"
+                  name="e-mail"
+                  id="e-mail"
+                  placeholder="E-mail"
+                />
+                <button class="subscription__btn" type="submit">
+                  Подписаться
+                  <svg class="subscription__icon" width="24" height="24">
+                    <use href="./images/icon.svg#icon-icon-send-3"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
     <script>

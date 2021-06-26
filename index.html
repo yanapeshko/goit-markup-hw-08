@@ -198,8 +198,9 @@
             <li class="section--experience__item">
               <div class="overlay">
                 <img
+                  srcset="./img/box.jpg 1x, ./img/box-2x.jpg 2x"
                   class="overlay-img"
-                  src="./images/img.jpg"
+                  src="./img/box.jpg"
                   alt="Сотрудник работающий за компьютером"
                   width="370"
                 />
@@ -210,22 +211,26 @@
             <li class="section--experience__item">
               <div class="overlay">
                 <img
+                  srcset="./img/box2.jpg 1x, ./img/box2-2x.jpg 2x"
                   class="overlay-img"
-                  src="./images/box2.jpg"
+                  src="./img/box2.jpg"
                   alt="Дизайнер разрабатывающий интерфейс для смартфона"
                   width="370"
                 />
+
                 <h3 class="overlay__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="section--experience__item">
               <div class="overlay">
                 <img
+                  srcset="./img/box3.jpg 1x, ./img/box3-2x.jpg 2x"
                   class="overlay-img"
-                  src="./images/box3.jpg"
+                  src="./img/box3.jpg"
                   alt="Дизайнер работающий над цветной графикой на планшете"
                   width="370"
                 />
+
                 <h3 class="overlay__title">Дизайнерские решения</h3>
               </div>
             </li>
@@ -238,12 +243,34 @@
           <h2 class="section--team__title">Наша команда</h2>
           <ul class="section--team__list">
             <li class="section--team__item">
-              <img
-                class="section--team__img"
-                src="./images/img1.jpg"
-                alt="Фото члена команды"
-              />
-
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team-member1-480-1x.jpg 1x,
+                    ./img/team-member1-480-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/team-member1-768-1x.jpg 1x,
+                    ./img/team-member1-768-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team-member1-1200-1x.jpg 1x,
+                    ./img/team-member1-1200-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="section--team__img"
+                  src="#"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__title">Игорь Демьяненко</h3>
                 <p class="team-member__profession" lang="en">
@@ -282,12 +309,34 @@
               </div>
             </li>
             <li class="section--team__item">
-              <img
-                class="section--team__img"
-                src="./images/img2.jpg"
-                alt="Фото члена команды"
-              />
-
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team-member2-480-1x.jpg 1x,
+                    ./img/team-member2-480-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/team-member2-768-1x.jpg 1x,
+                    ./img/team-member2-768-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team-member2-1200-1x.jpg 1x,
+                    ./img/team-member2-1200-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="section--team__img"
+                  src="#"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__title">Ольга Репина</h3>
                 <p class="team-member__profession" lang="en">
@@ -326,11 +375,34 @@
               </div>
             </li>
             <li class="section--team__item">
-              <img
-                class="section--team__img"
-                src="./images/img3.jpg"
-                alt="Фото члена команды"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team-member3-480-1x.jpg 1x,
+                    ./img/team-member3-480-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/team-member3-768-1x.jpg 1x,
+                    ./img/team-member3-768-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team-member3-1200-1x.jpg 1x,
+                    ./img/team-member3-1200-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="section--team__img"
+                  src="#"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__title">Николай Тарасов</h3>
                 <p class="team-member__profession" lang="en">Marketing</p>
@@ -367,11 +439,34 @@
               </div>
             </li>
             <li class="section--team__item">
-              <img
-                class="section--team__img"
-                src="./images/img4.jpg"
-                alt="Фото члена команды"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./img/team-member4-480-1x.jpg 1x,
+                    ./img/team-member4-480-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                    ./img/team-member4-768-1x.jpg 1x,
+                    ./img/team-member4-768-2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./img/team-member4-1200-1x.jpg 1x,
+                    ./img/team-member4-1200-2x.jpg 2x
+                  "
+                />
+                <img
+                  class="section--team__img"
+                  src="#"
+                  alt="Фото члена команды"
+                />
+              </picture>
               <div class="team-member">
                 <h3 class="team-member__title">Михаил Ермаков</h3>
                 <p class="team-member__profession" lang="en">UI Designer</p>

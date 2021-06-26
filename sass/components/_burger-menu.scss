@@ -188,16 +188,27 @@
   color: $accent-text-color;
 }
 .mobile-social-set {
-  @extend %centeredFlex;
-  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  // @extend %centeredFlex;
+  // justify-content: space-between;
   padding: 0;
   margin-bottom: 0;
   list-style: none;
   margin-top: 64px;
+  // &__item:not(:last-child) {
+  //   padding-right: 20px;
+  //   border-right: 1px solid rgba(33, 33, 33, 0.2);
+  // }
   &__item:not(:last-child) {
-    padding-right: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
+  &__item:nth-child(4) {
+    padding-left: 15px;
+  }
+
   &__link {
     // position: relative;
     font-weight: 500;

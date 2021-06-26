@@ -57,6 +57,11 @@
   border-radius: 4px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform $transition-duration $timing-duration;
+  @media screen and (max-height: 600px) {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
   @media screen and (max-width: 1199px) {
     width: 100%;
