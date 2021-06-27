@@ -451,6 +451,11 @@ body.modal-open {
   min-width: 130px;
 }
 
+.feature-list {
+  padding: 0;
+  list-style: none;
+}
+
 @media screen and (min-width: 768px) {
   .feature-list {
     display: flex;
@@ -1532,7 +1537,7 @@ position: absolute; */
   text-decoration: none;
 }
 
-.site-nav, .feature-list, .section--experience__list, .team-member__links, .mobile-social-set {
+.site-nav, .section--experience__list, .team-member__links, .mobile-social-set {
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;

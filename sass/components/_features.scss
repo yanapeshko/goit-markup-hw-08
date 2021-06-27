@@ -3,7 +3,11 @@
 
 // }
 .feature-list {
-  @extend %list;
+  // @extend %list;
+  padding: 0;
+  // margin-top: 0;
+  // margin-bottom: 0;
+  list-style: none;
 
   @media screen and(min-width: 768px) {
     display: flex;
