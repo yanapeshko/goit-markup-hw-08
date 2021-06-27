@@ -2,9 +2,11 @@
   background: #f5f4fa;
 }
 .section--team__list {
-  @extend %list;
+  // @extend %list;
+  padding: 0;
+  list-style: none;
 
-  @media screen and(min-width: 767px) {
+  @media screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;

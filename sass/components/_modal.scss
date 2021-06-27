@@ -110,6 +110,11 @@
   height: 18px;
   transition: fill $timing-duration $transition-duration;
 }
+.order-form__label {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
 .order-form__input {
   width: 100%;
   margin: 0;
@@ -135,9 +140,14 @@
   align-items: center;
   justify-content: center; */
   margin-bottom: 30px;
-  font: inherit;
+  font-size: 12px;
+  line-height: 1.16;
   &:focus-within > .order-form__input {
     border: 1px solid $accent-text-color;
+  }
+  @media screen and(min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.7;
   }
 }
 .order-form__field--comment {

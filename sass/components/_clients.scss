@@ -1,9 +1,10 @@
 .clients-list {
-  @extend %list;
-
+  padding: 0;
+  list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
+
   // justify-content: center;
 }
 .clients-list__item {
