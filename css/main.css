@@ -696,7 +696,7 @@ body.modal-open {
   background: #2f303a;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .footer-page__container {
     text-align: center;
   }
@@ -713,7 +713,6 @@ body.modal-open {
   .footer-page__mobile-tablet {
     display: flex;
     justify-content: space-around;
-    text-align: center;
     margin-bottom: 60px;
   }
 }
